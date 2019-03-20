@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>San Angelico Museum of Contemporary Art</title>
+  <link rel="stylesheet" href="css/jquery.mobile.min.css">
+  <style>
+    #homeBanner {
+      width: 100%;
+    }
+    
+    .center {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .banner {
+      display: block;
+      width: 100%;
+    }
+    
+    #qrcode {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    #map2 {
+      margin-left: auto;
+      margin-right: auto;
+      width: 320px;
+      height: 320px;
+    }
+  </style>
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.mobile.min.js"></script>
+
+</head>
+
+<body>
+  
+  <div id="homeScreen" data-role="page">
+    <div class="app">
+            <div id="deviceready" class="blink">
+                <p class="event listening">Connecting to Device</p>
+                <p class="event received">Device is Ready</p>
+                <p class="battery-status">LOOK</p>
+            </div>
+        </div>
+    <img src="imgs/suit-business-man-business-man-37547.jpeg" class="banner" />
+    <div data-role="content">
+      <ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+        <li><a href="#currentExhibits">Current Exhibits</a></li>
+        <li><a href="#pastExhibits">Past Exhibits</a></li>
+        <li><a href="">Calendar of Events</a></li>
+        <li><a href="#discoverScreen">[ Discover ]</a></li>
+        <li><a href="#listScreen">Lists</a></li>
+        <li><a href="#imgScreen">Image Screen</a></li>
+      </ul>
+      <div class="center">
+          <p class="center">Your Device Info: </p>
+          <p>Platform: </p>
+          <div id="devTag1"></div>
+          <p>Model: </p>
+          <div id="devTag2"></div>
+          <p>Version: </p>
+          <div id="devTag3"></div>
+          <p>Manufacturer: </p>
+          <div id="devTag4"></div>
+        </div>
+      <div class="ui-grid-a center">
+        <div class="ui-block-a">
+          <a href="#aboutScreen" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-notext ui-btn-inline ui-nodisc-icon ui-alt-icon">Info</a>
+        </div>
+        <div class="ui-block-b">
+          <a href="#mapScreen" class="ui-btn ui-corner-all ui-icon-location ui-btn-icon-notext ui-btn-inline ui-nodisc-icon ui-alt-icon">Map</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="currentExhibits" data-role="page">
+    <header data-role="header" data-position="fixed" data-id="appHeader">
+      <h1>SAMOCA</h1>
+      <a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    </header>
+    <div data-role="content">
+      <h1 class="center">Current Exhibits</h1>
+      <ul data-role="listview" data-inset="false" class="ui-nodisc-icon ui-alt-icon">
+        <li>
+          <a href="#"><img src="imgs/Westhoff_thumb.png">
+            <h2>Siobhan Westhoff</h2>
+            <p>Final Weeks</p>
+          </a>
+        </li>
+        <li>
+          <a href="#"><img src="imgs/101733188_thumb.png">
+            <h2>RED</h2>
+            <p>Eleanor Friosh</p>
+          </a>
+        </li>
+        <li>
+          <a href="#"><img src="imgs/106588354_thumb.png">
+            <h2>Imbalanced</h2>
+            <p>Simone Best, Sheldon Crane, and Elizabeth Moore</p>
+          </a>
+        </li>
+        <li>
+          <a href="#"><img src="imgs/924520721_thumb.png">
+            <h2>Morten Rand-Hendriksen</h2>
+            <p>The Untitled Collection</p>
+          </a>
+        </li>
+        <li>
+          <a href="#"><img src="imgs/Vision_thumb.png">
+            <h2>VISION</h2>
+            <p>New Works from the SAMOCA Permanent Collection</p>
+          </a>
+        </li>
+        <li>
+          <a href="#"><img src="imgs/Watching_thumb.png">
+            <h2>Paul Shellmont: Bird Watching</h2>
+            <p>Upcoming Exhibition</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="pastExhibits" data-role="page">
+    <header data-role="header" data-position="fixed" data-id="appHeader">
+      <h1>SAMOCA</h1>
+      <a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    </header>
+    <div data-role="content">
+      <h1 class="center">Past Exhibits</h1>
+      <ul data-role="listview" data-inset="false" class="ui-nodisc-icon ui-alt-icon">
+        <li>
+          <a href="#"><img src="imgs/GroundSwell_thumb.png">
+            <h2>Groundswell: Design Series II</h2>
+            <p> </p>
+          </a>
+        </li>
+        <li>
+          <a href="#"><img src="imgs/Buildings_thumb.png">
+            <h2>Reflections on Architecture: Imagining Buildings</h2>
+            <p> </p>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+
+  <div id="mapScreen" data-role="page">
+    <header data-role="header" data-position="fixed" data-id="appHeader">
+      <h1>Map Screen</h1>
+      <a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    </header>
+    <div data-role="content">
+      <h2 class="center">Payson City Landfill, </h2>
+      <p class="center">West 10400 South, Payson, UT
+        <br>(801) 465-5295</p>
+      <div id="map2"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7809.187261257193!2d-111.8049704311886!3d40.03865482231155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874da6da616c6fb7%3A0xcf05b74b2f151568!2sPayson+City+Landfill!5e0!3m2!1sen!2sus!4v1552437038998" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+    </div>
+  </div>
+
+  <div id="discoverScreen" data-role="page">
+    <header data-role="header" data-position="fixed" data-id="appHeader">
+      <h1>SAMOCA</h1>
+      <a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    </header>
+    <div data-role="content">
+      <img id="qrcode" src="imgs/qr.png" />
+      <h3 class="center">Discover More Exciting Stories</h3>
+      <p class="center">Any time you see this QR code, scan it using the Discover button to see additional content from SAMOCA.</p>
+      <a id="qrScanBtn" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-search">Discover</a>
+    </div>
+  </div>
+
+  <div id="listScreen" data-role="page">
+    <header data-role="header" data-position="fixed" data-id="appHeader">
+      <h1>SAMOCA</h1>
+      <a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    </header>
+    <div data-role="content">
+      <div class="ui-content">
+          
+          <h2>Ordered List Example</h2>
+          <ol data-role="listview">
+                <li><a href="#page9">Count Bubbles</a></li>
+                <li><a href="#page10">Icons</a></li>
+                <li><a href="#page11">Advanced List Views</a></li>
+                <li><a href="#page12">Rich Content Lists</a></li>
+            </ol>
+            <h2>Unordered List Example</h2>
+            <ul data-role="listview">
+                <li><a href="#page9">Count Bubbles</a></li>
+                <li><a href="#page10">Icons</a></li>
+                <li><a href="#page11">Advanced List Views</a></li>
+                <li><a href="#page12">Rich Content Lists</a></li>
+            </ul>
+
+        </div>
+    </div>
+  </div>
+
+  <div id="imgScreen" data-role="page">
+    <header data-role="header" data-position="fixed" data-id="appHeader">
+      <h1>Image Screen</h1>
+      <a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    </header>
+    <div data-role="content">
+      <h2 class="center">Big Bee or Tiny Humans?</h2>
+      <h3 class="center">We'll never know!</h3>
+      <img class="center banner" src="imgs/thomas-stephan-1099357-unsplash.jpg" />
+      <p>Webtwo ipsum appjet mozy klout flickr jibjab voxy, imeem convore meevee. doostang klout. squidoo. Knewton sococo wikia, udemy. Kippt tumblr tivo voki, handango. Kiko odeo zooomr ideeli, dopplr weebly. Joost orkut rovio, zillow. Oovoo bubbli jaiku squidoo, cloudera ebay. trulia. Edmodo groupon tivo, lanyrd. Eskobo reddit nuvvo greplin mozy, skype doostang nuvvo, heekya omgpop zanga. squidoo odeo. Chartly joost balihoo kazaa meevee, dopplr revver jibjab. Plickers skype meevee imeem voxy, hipmunk hojoki. Jiglu rovio spotify wufoo disqus zoho, tivo jaiku wesabe.</p>
+
+        <p>Flickr zooomr etsy zynga jumo movity, ngmoco spock disqus.  Yoono lala dropio dogster, cloudera. Handango cuil mozy bubbli, diigo edmodo zanga jumo, nuvvo foodzie. Skype shopify orkut meebo joyent nuvvo orkut, heroku spotify twitter chumby. Disqus plaxo zimbra etsy spock, skype whrrl stypi. Zoodles meebo disqus dopplr, wesabe. Scribd kazaa xobni kippt eskobo, joukuu skype mzinga. Convore plaxo blippy whrrl jaiku disqus, blippy boxbe greplin akismet. Oooj zanga zillow jabber geni sococo quora, nuvvo mozy zoodles eskobo qeyno.</p>
+        
+        <p>Eskobo airbnb dogster cuil kiko, klout akismet. Gooru lala cloudera blippy edmodo jaiku, chartly foodzie diigo oooj. meevee tivo joost. Meebo ngmoco edmodo zoodles ifttt, squidoo ideeli. Foodzie vimeo grockit voki, babblely. Doostang revver qeyno kno, spotify kiko. eduvant empressr ebay. Twitter rovio kiko zoho yuntaa klout yoono, cotweet squidoo rovio revver cloudera, trulia elgg wikia ifttt lala. Diigo plugg mozy jajah boxbe, klout skype. Etsy geni meevee ebay ideeli, mobly bebo mobly.</p>
+      <p class="center">123 Main Street Ventura, CA 12345 (800) 555-1212</p>
+    </div>
+  </div>
+
+  <div id="aboutScreen" data-role="page">
+    <header data-role="header" data-position="fixed" data-id="appHeader">
+      <h1>American Pirates</h1>
+      <a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    </header>
+    <div data-role="content">
+      <h2 class="center">This is not a picture of a Museum</h2>
+      <h3 class="center">It is something very different</h3>
+      <img class="center banner" src="imgs/boat-maritime-mast-37859.jpg" />
+      <p>Hogshead Arr keelhaul crack Jennys tea cup gangplank run a shot across the bow measured fer yer chains come about Sail ho driver. Smartly yo-ho-ho Jack Tar bring a spring upon her cable provost spike weigh anchor maroon fathom square-rigged. Trysail flogging hang the jib interloper rutters bilged on her anchor matey bounty Gold Road skysail. Yo-ho-ho pink Sink me poop deck bounty avast gangway bowsprit Blimey dead men tell no tales. Cat o'nine tails lookout measured fer yer chains hang the jib rum crack Jennys tea cup killick provost loaded to the gunwalls poop deck. </p>
+
+      <p>American Main topmast driver case shot jib lugger parley red ensign provost belay. Hearties parley overhaul topsail parrel American Main Pieces of Eight warp lass lad. Wench bilge draft pressgang Gold Road mizzen dead men tell no tales lanyard dance the hempen jig hempen halter. Marooned sheet measured fer yer chains Gold Road carouser topsail run a shot across the bow Letter of Marque lateen sail Jack Tar. Long boat crow's nest code of conduct chandler haul wind port mutiny Sink me square-rigged avast. </p>
+
+      <p>Swab scuppers jack clap of thunder squiffy landlubber or just lubber gabion deadlights pirate sheet. Gold Road haul wind snow six pounders prow rope's end gabion bucko doubloon run a shot across the bow. Measured fer yer chains sloop yard loaded to the gunwalls Cat o'nine tails ballast Jack Ketch fluke bowsprit list. </p>
+      <p class="center">123 Main Street Ventura, CA 12345 (800) 555-1212</p>
+    </div>
+  </div>
+  <!--
+	Admission
+	Directions
+	Parking
+	Hours
+	Volunteer
+	-->
+  <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+  </script>
+</body>
+
+</html>
